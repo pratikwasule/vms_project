@@ -1,0 +1,56 @@
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 1.3//EN"
+"http://struts.apache.org/dtds/tiles-config_1_3.dtd">
+
+<tiles-definitions>
+
+
+
+
+<definition name="baseLayout" path="/template/baseLayout.jsp">
+        <put name="title"  value="VDS PROJECT" />
+        <put name="h" value="/template/header.jsp" />
+        <put name="l"   value="/template/leftMenu.jsp" />
+        <put name="b"   value="/template/body.jsp" />
+        <put name="f" value="/template/footer.jsp" />        
+    </definition>
+    
+    
+   
+    
+    
+    
+    <definition name="saveEntry" extends="baseLayout">
+      <put name="title"  value="Visitor PROJECT" />
+      <put name="b" value="/visitorEntry.jsp"/>
+    </definition>
+    
+    <definition name="updateVisitor" extends="baseLayout">
+      <put name="title"  value="Visitor PROJECT" />
+      <put name="b" value="/update.jsp"/>
+    </definition>
+    
+    <definition name="viewEntry" extends="baseLayout">
+      <put name="title"  value="Visitor PROJECT" />
+      <put name="b" value="/viewEntry.jsp"/>
+    </definition>
+    
+    <definition name="tinku" extends="baseLayout">
+      <put name="title"  value="Visitor PROJECT" />
+      <put name="b" value="/visitorEntry.jsp"/>
+    </definition>
+    
+     <definition name="update" extends="baseLayout">
+      <put name="title"  value="Visitor PROJECT" />
+      <put name="b" value="/S.jsp"/>
+    </definition>
+      
+      
+      <definition name="lgn" extends="baseLayout">
+      <put name="title" value="Welcome"></put>
+      <put name="b" value="/template/A.jsp"></put>
+      </definition>
+       
+	 
+	
+</tiles-definitions>
